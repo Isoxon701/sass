@@ -1,0 +1,33 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+.container
+    width: 500px
+    height: 500px
+    background: rgb(6,122,255)
+    margin: auto
+    margin-top: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &:hover
+        background: yellow
+        .box
+            background: blue
+            h1
+                color: white
+    @media (max-width: 500px)
+        width: 300px
+        height: 300px
+    .box
+        width: 100px
+        height: 100px
+        background: yellow
+        display: flex
+        align-items: center
+        justify-content: center
+        font-family: cursive
+        &:active
+            transform: scale(0.98)
